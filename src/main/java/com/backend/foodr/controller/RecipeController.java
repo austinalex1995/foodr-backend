@@ -64,4 +64,11 @@ public class RecipeController {
 
     }
 
+    @GetMapping("recipe/createdby/{id}")
+    public List<Recipe> getRecipesByCreatedby(@PathVariable("id") long id) {
+
+        return this.recipeService.findByCreatedBy(id);
+
+    }
+
 }

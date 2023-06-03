@@ -60,4 +60,10 @@ public class RecipeService {
 
     }
 
+    public List<Recipe> findByCreatedBy(Long id) {
+
+        return this.recipeRepository.findByCreatedBy(id);
+
+    }
+
 }

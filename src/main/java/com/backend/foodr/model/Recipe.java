@@ -30,6 +30,9 @@ public class Recipe {
     @Column
     private String title;
 
+    @Column
+    private long createdBy;
+
     @OneToMany(targetEntity = Ingredient.class, cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "ri_fk", referencedColumnName = "id")
     private List<Ingredient> ingredients;
