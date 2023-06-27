@@ -1,10 +1,10 @@
-package com.backend.foodr;
+package com.backend.revpaybackend;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class FoodrApplicationTests {
+class RevPayApplicationTests {
 
 	@Test
 	void contextLoads() {
